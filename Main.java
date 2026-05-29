@@ -1,24 +1,61 @@
-//Inheritance
+class Employee {
 
-class Vehicle
-{
-    void start()
-    {
-        System.out.println("Vehicle is starting");
+    void displayName() {
+        System.out.println("Company : Ethnotech");
     }
 }
 
-class car extends Vehicle{
-    void drive(){
-        System.out.println("car is running");
+class Employer extends Employee {
+
+    void displayEmp() {
+        System.out.println("Employee : Sai Dinesh");
+    }
+}
+class Role extends Employer {
+
+    void displayRole() {
+        System.out.println("Role : DEV Engineer");
     }
 }
 
-class Main{
-    public static void main(String args[])
-    {
-        car c=new car();
-        c.start();
-        c.drive();
+class Employee2 extends Employee {
+
+    void displayEmp() {
+        System.out.println("Employee : Ganesh");
+    }
+
+    void displayRole() {
+        System.out.println("Role : Tester");
+    }
+
+    void displaySalary() {
+        System.out.println("Salary : 70,000/-");
+    }
+}
+
+class Salary extends Role {
+
+    void displaySalary() {
+        System.out.println("Salary : 90,000/-");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Salary s = new Salary();
+
+        s.displayName();
+        s.displayEmp();
+        s.displayRole();
+        s.displaySalary();
+        System.out.println();
+        Employee2 e2 = new Employee2();
+
+        e2.displayName();
+        e2.displayEmp();
+        e2.displayRole();
+        e2.displaySalary();
     }
 }
