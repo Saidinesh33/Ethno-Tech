@@ -8,7 +8,7 @@ class SBI extends Bank
     @Override
     public void interestRate()
     {
-        System.out.println("SBI Interest Rate: 6.5%");
+        System.out.println("SBI Interest Rate:6.5%");
     }
 }
 
@@ -17,11 +17,11 @@ class HDFC extends Bank
     @Override
     public void interestRate()
     {
-        System.out.println("HDFC Interest Rate: 7%");
+        System.out.println("HDFC Interest Rate:7%");
     }
 }
 
-public class Main3
+public class BankOverride
 {
     public static void main(String args[])
     {
